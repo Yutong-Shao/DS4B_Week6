@@ -26,14 +26,11 @@ library(tidyverse)
 data <- read_csv("raw_data/data.csv")
 ```
 
-```{r}
-data
-```
+## An interesting plot
+
 
 ```{r}
-ggplot(data, aes(x = TempC, y = weight, color = Sex)) +
+ggplot(data, aes(x = weight, y = VO2_ml_per_h, color = Sex)) +
     geom_point()
 ```
 
-
-## An interesting plot
